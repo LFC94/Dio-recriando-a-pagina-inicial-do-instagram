@@ -1,29 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link ref="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Instagram</title>
-</head>
+    <script src="js/script.js"></script>
+  </head>
 
-<body>
+  <body>
     <div class="instagram-wrapper">
-        <div class="instagram-visual">
-            <img class="img-visual-instagram" src="img/visual_instagram.png" alt="Visual do Feed do Instagram">
+      <div class="instagram-visual">
+        <img
+          class="img-visual-instagram"
+          src="img/visual_instagram.png"
+          alt="Visual do Feed do Instagram"
+        />
+      </div>
+      <div class="instagram-acesso">
+        <div class="group">
+          <div>
+            <img
+              class="instagram-logo"
+              src="img/Instagram-Logo.png"
+              alt="Logo Instagram"
+            />
+          </div>
+          <div class="sub-grupo-login">
+            <label for="login">
+              <input
+                class="campos-login"
+                type="text"
+                name="login"
+                id="login"
+                maxlength="75"
+                placeholder="Telefone, nome de usuário ou email"
+              />
+            </label>
+          </div>
+          <div class="sub-grupo-login">
+            <label for="login">
+              <input
+                class="campos-login"
+                type="password"
+                name="senha"
+                id="senha"
+                onkeyup="changeSenha()"
+                onblur="changeSenha()"
+                onchange="changeSenha()"
+                placeholder="Senha"
+              />
+            </label>
+          </div>
+          <div class="sub-grupo-login">
+            <button id="btn_entrar" class="btn-entrar campos-login" disabled>Entrar</button>
+          </div>
         </div>
-        <div class="instagram-acesso">
-            <div class="instagram-login">
-
-            </div>
-            <div class="instagram-cadastro">
-                <p>Não tem uma conta? <a href="#">Cadastra-se</a> </p>
-            </div>
-            <div class="instagram-apps"></div>
-
+        <div class="group">
+          <p>Não tem uma conta? <a href="#">Cadastra-se</a></p>
         </div>
+        <div class="instagram-apps">
+          <p class="titulo-apps">Obtenha os Aplicativos</p>
+          <a href="#"
+            ><img class="img-apps" src="img/appstore.png" alt="Applay Store"
+          /></a>
+          <a href="#"
+            ><img class="img-apps" src="img/googleplay.png" alt="Google Play"
+          /></a>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
